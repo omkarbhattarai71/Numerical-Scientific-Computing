@@ -1,0 +1,83 @@
+2026-03-02 67ecd4d Overall project stat - Mini Project
+
+ Mini-Project-I/bench.py | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+2026-03-02 53971a4 lecture 3 Exercise
+
+ PI_MonteCarloMethod.ipynb | 122 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 122 insertions(+)
+2026-03-02 4c02598 Lecture 4 Exercises plus gitignore file updates
+
+ .gitignore     |   4 +-
+ lecture4.ipynb | 327 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 330 insertions(+), 1 deletion(-)
+2026-03-02 400bbdd Using Multiprocessing
+
+ Mini-Project-I/mandelbrot_multiproc.png | Bin 0 -> 443516 bytes
+ Mini-Project-I/mandelbrot_multiproc.py  |  59 ++++++++++++++++++++++++++++++++
+ 2 files changed, 59 insertions(+)
+2026-03-02 7055298 Update .gitignore to ignore virtual environment and wheel files
+
+ .gitignore | 5 +++++
+ 1 file changed, 5 insertions(+)
+2026-02-26 6972af8 Tested the functionality of main in Python
+
+ Extra Exercise/another.py   | 5 +++++
+ Extra Exercise/test_main.py | 7 +++++++
+ 2 files changed, 12 insertions(+)
+2026-02-26 594593a Mandelbrot Project: using Numba
+
+ Mini-Project-I/mandelbrot_numba.png | Bin 0 -> 439251 bytes
+ Mini-Project-I/mandelbrot_numba.py  |  46 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 46 insertions(+)
+2026-02-26 a40f055 Mandelbrot Project: using vectorized numpy(Optimized)
+
+ Mini-Project-I/mandelbrot_numpy.png | Bin 0 -> 439382 bytes
+ Mini-Project-I/mandelbrot_numpy.py  |  37 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 37 insertions(+)
+2026-02-26 3435167 Mandelbrot project: baseline(with normal python loops
+
+ Mini-Project-I/mandelbrot_baseline.png | Bin 0 -> 439761 bytes
+ Mini-Project-I/mandelbrot_baseline.py  |  41 +++++++++++++++++++++++++++++++++
+ 2 files changed, 41 insertions(+)
+2026-02-26 a88a7c6 Three reusable functions are created
+
+ Mini-Project-I/mandelbrot_common.py | 28 ++++++++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+2026-02-26 a54b365 Monte Carlo Exercise on lecture
+
+ Extra Exercise/Activity - Lecture 2.ipynb    |  48 +++---
+ Extra Exercise/Monte Carlo - Lecture 3.ipynb | 214 +++++++++++++++++++++++++++
+ 2 files changed, 238 insertions(+), 24 deletions(-)
+2026-02-23 4b46730 Check Strato - ReadMe
+
+ README.md | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+2026-02-16 7d1fc44 Exercise 2.2: Cache blocking
+
+ Cache blocking.ipynb | 181 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 181 insertions(+)
+2026-02-16 147f567 Exercise 2.1: Loop unrolling
+
+ Loop unrolling.ipynb | 193 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 193 insertions(+)
+2026-02-16 97e5939 Lecture two, classroom activities done by me and ran the code provided by the teacher
+
+ Extra Exercise/Activity - Lecture 2.ipynb | 594 +++++++++++++++++++++++++
+ Extra Exercise/Lecture_2_code.ipynb       | 714 ++++++++++++++++++++++++++++++
+ Memory_Organization.ipynb                 |  26 +-
+ 3 files changed, 1318 insertions(+), 16 deletions(-)
+2026-02-15 6e27064 Memory organizatoin - C vs Fortran layout
+
+ Memory_Organization.ipynb | 192 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 192 insertions(+)
+2026-02-15 8b222ed Excercise 1.1: 'Use of Registers'
+
+ README.md             |   2 +-
+ Use_of_Register.ipynb | 187 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 188 insertions(+), 1 deletion(-)
+2026-02-11 8094662 Initial commit
+
+ .gitignore | 207 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md  |   2 +
+ 2 files changed, 209 insertions(+)
