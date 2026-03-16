@@ -1,3 +1,11 @@
+2026-03-06 12e5394 Readme update
+
+ README.md | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+2026-03-06 4c4f135 Added git_log and updated the virtual environment connection on the readme file
+
+ Mini-Project-I/git_log.txt | 83 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 83 insertions(+)
 2026-03-02 67ecd4d Overall project stat - Mini Project
 
  Mini-Project-I/bench.py | 21 +++++++++++++++++++++
