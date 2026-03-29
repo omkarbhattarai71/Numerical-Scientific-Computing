@@ -1,0 +1,5 @@
+{
+  "problems.exclude": {
+    "**/globalStorage/github.copilot-chat/**": true
+  }
+}
