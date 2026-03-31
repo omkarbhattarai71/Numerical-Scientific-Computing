@@ -1,3 +1,9 @@
+2026-03-31 1886cc7 Modification on report
+
+ Mini-Project-II/Report.md            |   9 ++
+ Mini-Project-II/git_log.txt          | 201 +++++++++++++++++++++++++++++++++++
+ Mini-Project-II/mandelbrot_numpy.png | Bin 0 -> 439382 bytes
+ 3 files changed, 210 insertions(+)
 2026-03-31 19e10a7 Drafted Report - Markdown
 
  Mini-Project-II/Report.md | 55 +++++++++++++++++++++++++++++++++++++++++++++++
