@@ -13,8 +13,13 @@ Three distinct approaches were implemented to analyze performance scaling:
 `Note: Numpy Vectorized implementation is repeated here, because it is necessary to compare how performance of implementations of multiprocessing and dask differ from it.`
 
 2. **Multiprocessing:** Utilizes the `multiprocessing.Pool` to divide the complex grid into horizontal strips (chunks). Each worker process computes the iterations for its assigned strip using standard Python loops.
+![alt text](mandelbrot_multiproc.png)
+<p align="center"><b>Figure 2.1: Multiprocessing Implementation</b></p>
 
 3. **Dask:** Utilizes `dask.array` to divide the grid into 2D blocks. Crucially, the `map_blocks` function is used to apply the optimized vectorized NumPy logic to each chunk atomically, minimizing Dask's scheduling overhead.
+
+![alt text](mandelbrot_dask.png)
+<p align="center"><b>Figure 3.1: Dask Implementation</b></p>
 
 ## 3. Benchmarking Methodology
 To perform a comprehensive scaling analysis, the implementations were tested across increasing grid resolutions: 1024x1024, 2048x2048, and 4096x4096. 
@@ -34,12 +39,16 @@ To perform a comprehensive scaling analysis, the implementations were tested acr
 ### 4.2 Speed-up Comparison
 *The following table highlights the best times achieved for each method at the 4096x4096 resolution.*
 
+<p align="center"><b>Table 4.2: Speed-up Comparison</b></p>
+
 | Implementation | Time (seconds) | Speedup vs NumPy |
 | :--- | :--- | :--- |
 | NumPy Vectorized (Baseline) | 29.41s | 1.0x |
 | Multiprocessing (2 workers, 8 chunks) | 37.62s | **0.78x** |
 | Dask Distributed (Strato Cluster) | 10.87s | **2.71x** |
 | Dask Local (256x256 chunks) | 3.38s | **8.69x** |
+
+
 
 ### 4.3 Reasoning and Interpretation
 The most striking result is that the **Multiprocessing implementation is slower than the baseline (Speedup < 1)**. The NumPy baseline uses highly optimized, compiled C-code to efficiently compute the entire array. The multiprocessing version reverts to using nested Python `for` loops inside the worker functions. The overhead of native Python loops heavily outweighs the benefits of distributing the work across two cores.
