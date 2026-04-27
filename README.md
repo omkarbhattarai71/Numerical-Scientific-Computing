@@ -15,3 +15,6 @@ Host numlab-1
 
 ### Connect to the virtual environment 
 source /home/ubuntu/Numerical-Scientific-Computing/num_com/bin/activate 
+
+### To activate github
+ssh -T git@github.com
