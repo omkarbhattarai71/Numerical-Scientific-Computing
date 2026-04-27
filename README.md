@@ -18,3 +18,4 @@ source /home/ubuntu/Numerical-Scientific-Computing/num_com/bin/activate
 
 ### To activate github
 ssh -T git@github.com
+git remote set-url origin git@github.com:omkarbhattarai71/Numerical-Scientific-Computing.git
