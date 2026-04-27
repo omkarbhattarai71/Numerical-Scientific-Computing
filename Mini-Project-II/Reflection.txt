@@ -1,0 +1,6 @@
+Setting up the distributed Dask setup on the Strato cluster was undoubtedly the largest obstacle. It took a lot of trial and error to arrange the workers and scheduler across VS Code terminals without port conflicts.
+
+I was quite taken aback by the benchmark results. The multiprocessing pool was slower than my basic NumPy baseline (a 0.78x speedup), contrary to my expectations. The performance was totally destroyed by the workers' use of native Python for loops. Additionally, the distributed cluster was totally destroyed by my local Dask setup (3.38s vs. 10.87s). 
+Dask had to send a huge 256 MB graph over the network, as indicated by the terminal warning.
+
+I learned from this project that parallel computing isn't a magic bullet. Parallelising can actually slow things down if the internal code isn't optimised or if network transfer time exceeds computation time. It is vital to balance computation with memory and network overhead.
