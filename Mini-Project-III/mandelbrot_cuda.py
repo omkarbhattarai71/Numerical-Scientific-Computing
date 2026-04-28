@@ -60,8 +60,21 @@ def mandelbrot_numpy(x_min, x_max, y_min, y_max, width, height, max_iter):
 @cuda.jit
 def mandelbrot_kernel(d_output, x_min, x_max, y_min, y_max, width, height, max_iter):
     """
-    CUDA kernel computing Mandelbrot set.
-    Each thread computes one pixel.
+    CUDA kernel: compute Mandelbrot iteration counts per pixel and write in-place.
+
+    Argumentss:
+    d_output (device ndarray[int32], shape=(height, width)): device buffer to write results.
+    
+    x_min, x_max, y_min, y_max (float): real/imag bounds of the complex plane.
+    
+    width, height (int): image dimensions (columns, rows).
+    
+    max_iter (int): max iterations; if not escaped, write max_iter.
+    
+    Notes:
+    Maps thread (x,y)=cuda.grid(2) → pixel (x,y); threads with x>=width or y>=height do nothing.
+    Writes iteration index on first escape (|z|^2>4), otherwise writes max_iter.
+    
     """
     x, y = cuda.grid(2)
 
@@ -84,7 +97,17 @@ def mandelbrot_kernel(d_output, x_min, x_max, y_min, y_max, width, height, max_i
 @cuda.reduce
 def sum_reduction(a, b):
     """
-    Bonus Feature: CUDA Reduction kernel to sum all iterations.
+    Device reduction for summing array elements (used with @cuda.reduce).
+
+    Args:
+
+    a, b (numeric scalar): two partial values supplied by the reduction framework.
+    
+    Returns:
+    numeric scalar: the pairwise sum a + b.
+    
+    Notes:
+    Must be associative/commutative; use as total = sum_reduction(device_array.ravel()) to compute device-side totals without copying full array to host.
     """
     return a + b
 
