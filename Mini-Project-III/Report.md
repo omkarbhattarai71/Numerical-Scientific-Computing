@@ -96,3 +96,6 @@ Rather than transferring the entire 2D array back to the CPU to calculate the av
 3. B. B. Mandelbrot, "The Fractal Geometry of Nature," W. H. Freeman, 1982.
 4. P. Peitgen, H. Jürgens, D. Saupe, "Chaos and Fractals: New Frontiers of Science," Springer, 1992.
 5. J. Nickolls, I. Buck, M. Garland, K. Skadron, "Scalable Parallel Programming with CUDA," Queue, 2008.
+
+*Note: Link to the Github Mini Project-III:*
+[Github Repository Link](https://github.com/omkarbhattarai71/Numerical-Scientific-Computing/tree/main/Mini-Project-III)
