@@ -1,0 +1,111 @@
+======================================
+Job started at: Tue Apr 28 15:24:00 CEST 2026
+Running on node: ailab-l4-01
+======================================
+Tue Apr 28 15:24:00 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      On  |   00000000:01:00.0 Off |                    0 |
+| N/A   69C    P0             54W /   72W |   20986MiB /  23034MiB |     19%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA L4                      On  |   00000000:02:00.0 Off |                    0 |
+| N/A   58C    P0             41W /   72W |    6216MiB /  23034MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA L4                      On  |   00000000:41:00.0 Off |                    0 |
+| N/A   45C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA L4                      On  |   00000000:61:00.0 Off |                    0 |
+| N/A   58C    P0             29W /   72W |    6216MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA L4                      On  |   00000000:81:00.0 Off |                    0 |
+| N/A   77C    P0             71W /   72W |    6611MiB /  23034MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA L4                      On  |   00000000:82:00.0 Off |                    0 |
+| N/A   79C    P0             71W /   72W |    5649MiB /  23034MiB |    100%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA L4                      On  |   00000000:A1:00.0 Off |                    0 |
+| N/A   80C    P0             72W /   72W |    5293MiB /  23034MiB |     99%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA L4                      On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   78C    P0             71W /   72W |    6231MiB /  23034MiB |     99%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A         1996732      C   python                                20934MiB |
+|    1   N/A  N/A         2505209      C   python                                 6210MiB |
+|    3   N/A  N/A         2509560      C   python                                 6210MiB |
+|    4   N/A  N/A         2048016      C   ...ma-xFormers/.venv/bin/python3       6604MiB |
+|    5   N/A  N/A         2048017      C   ...ma-xFormers/.venv/bin/python3       5642MiB |
+|    6   N/A  N/A         2048018      C   ...ma-xFormers/.venv/bin/python3       5286MiB |
+|    7   N/A  N/A         2048019      C   ...ma-xFormers/.venv/bin/python3       6224MiB |
++-----------------------------------------------------------------------------------------+
+--------------------------------------
+Running Mandelbrot CUDA script...
+--------------------------------------
+Running unit tests...
+/ceph/home/student.aau.dk/yg03uc/num_sci/venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+...
+----------------------------------------------------------------------
+Ran 3 tests in 3.062s
+
+OK
+
+=== Scaling Experiment ===
+
+Grid: 256x256
+NumPy: 0.0350s
+CUDA block 8: 0.0002s | Speedup: 146.85x
+CUDA block 16: 0.0003s | Speedup: 131.10x
+/ceph/home/student.aau.dk/yg03uc/num_sci/venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 64 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+CUDA block 32: 0.0003s | Speedup: 106.85x
+
+Grid: 512x512
+NumPy: 0.1184s
+CUDA block 8: 0.0005s | Speedup: 232.34x
+CUDA block 16: 0.0005s | Speedup: 239.48x
+CUDA block 32: 0.0006s | Speedup: 213.02x
+
+Grid: 1024x1024
+NumPy: 0.4385s
+CUDA block 8: 0.0013s | Speedup: 333.78x
+CUDA block 16: 0.0013s | Speedup: 335.65x
+CUDA block 32: 0.0014s | Speedup: 308.75x
+
+Grid: 2048x2048
+NumPy: 1.9029s
+CUDA block 8: 0.0046s | Speedup: 409.23x
+CUDA block 16: 0.0047s | Speedup: 405.57x
+CUDA block 32: 0.0048s | Speedup: 394.30x
+
+Saved timing_results.csv
+Saved scaling_plot.png
+/ceph/home/student.aau.dk/yg03uc/num_sci/venv/lib/python3.10/site-packages/numba/cuda/dispatcher.py:536: NumbaPerformanceWarning: Grid size 1 will likely result in GPU under-utilization due to low occupancy.
+  warn(NumbaPerformanceWarning(msg))
+
+BONUS: Mean iterations per pixel (calculated via CUDA reduction): 20.17
+Saved mandelbrot_final.png
+
+DONE.
+--------------------------------------
+Execution finished
+--------------------------------------
+Job finished at: Tue Apr 28 15:24:37 CEST 2026
