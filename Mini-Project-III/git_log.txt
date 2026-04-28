@@ -1,0 +1,266 @@
+2026-04-29 86ea372 Addition of github repo for the particular project folder
+
+ Mini-Project-III/Report.md | 3 +++
+ 1 file changed, 3 insertions(+)
+2026-04-29 9884d59 Draft of Report
+
+ Mini-Project-III/Report.md | 98 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 98 insertions(+)
+2026-04-28 dc2c7b0 Readme update
+
+ .gitignore                 | 1 +
+ Mini-Project-III/README.md | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+2026-04-28 040d372 Code modification and docstrings associated
+
+ Mini-Project-III/mandelbrot_cuda.py | 29 ++++++++++++++++++++++++++---
+ 1 file changed, 26 insertions(+), 3 deletions(-)
+2026-04-28 c4e1160 Docstring and comment update on main python file
+
+ Mini-Project-III/mandelbrot_cuda.py | 16 ++--------------
+ 1 file changed, 2 insertions(+), 14 deletions(-)
+2026-04-28 cde8a63 Update on readme on how to run the code and where
+
+ Mini-Project-III/README.md | 18 ++++++++++++++++++
+ 1 file changed, 18 insertions(+)
+2026-04-28 d38d3e5 Mandelbrot Cuda Implementation
+
+ Mini-Project-III/mandelbrot_cuda.py   | 284 ++++++++++++++++++++++------------
+ Mini-Project-III/mandelbrot_cuda.sh   |  32 ++++
+ Mini-Project-III/mandelbrot_final.png | Bin 0 -> 401573 bytes
+ Mini-Project-III/scaling_plot.png     | Bin 0 -> 199061 bytes
+ Mini-Project-III/slurm_805045.err     |   0
+ Mini-Project-III/slurm_805045.out     | 111 +++++++++++++
+ Mini-Project-III/timing_results.csv   |  13 ++
+ 7 files changed, 345 insertions(+), 95 deletions(-)
+2026-04-27 4d3f279 also readme
+
+ README.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+2026-04-27 82d2cbc Readme update
+
+ README.md | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+2026-04-27 7249e13 Python code for mandelbrot cuda on strato, but the code will be pulled on ailab to run there as it requires GPU
+
+ Mini-Project-III/mandelbrot_cuda.py | 152 ++++++++++++++++++++++++++++++++++++
+ 1 file changed, 152 insertions(+)
+2026-04-27 03608ad Lecture execises - 9 and 10
+
+ Lecture Exercises/Lecture 10/Exercises.ipynb       | 618 +++++++++++++++++
+ .../Session2_Implementations_Lec10.ipynb           | 446 +++++++++++++
+ Lecture Exercises/Lecture 9/Exercises.ipynb        |   0
+ .../Lecture 9/Exercises_9_solutions.ipynb          | 742 +++++++++++++++++++++
+ Mini-Project-II/Reflection.txt                     |   6 +
+ 5 files changed, 1812 insertions(+)
+2026-03-31 2ea64d0 Git log final
+
+ Mini-Project-II/git_log.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+2026-03-31 1886cc7 Modification on report
+
+ Mini-Project-II/Report.md            |   9 ++
+ Mini-Project-II/git_log.txt          | 201 +++++++++++++++++++++++++++++++++++
+ Mini-Project-II/mandelbrot_numpy.png | Bin 0 -> 439382 bytes
+ 3 files changed, 210 insertions(+)
+2026-03-31 19e10a7 Drafted Report - Markdown
+
+ Mini-Project-II/Report.md | 55 +++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 55 insertions(+)
+2026-03-30 643a357 Lecture 8 exercise all
+
+ Lecture Exercises/Lecture 8/COMPLETION_SUMMARY.txt | 164 +++++
+ Lecture Exercises/Lecture 8/README.md              | 225 +++++++
+ Lecture Exercises/Lecture 8/lecture8.ipynb         | 658 +++++++++++++++++++++
+ Lecture Exercises/Lecture 8/lecture8_complete.py   | 135 +++++
+ Lecture Exercises/Lecture 8/messy_solver.py        | 110 ++++
+ Lecture Exercises/Lecture 8/profiling.py           | 219 +++++++
+ Lecture Exercises/Lecture 8/stats.py               | 244 ++++++++
+ Lecture Exercises/Lecture 8/test_all.py            | 156 +++++
+ .../Lecture 8/test_stats_hypothesis.py             | 168 ++++++
+ Lecture Exercises/Lecture 8/test_stats_pytest.py   | 167 ++++++
+ .../Lecture 8/test_stats_tolerance.py              | 118 ++++
+ Lecture Exercises/Lecture 8/test_stats_unittest.py | 206 +++++++
+ 12 files changed, 2570 insertions(+)
+2026-03-30 45aef0e Benchmak for Dask(distribute computing)
+
+ Mini-Project-II/README.md                          | 37 ++++++++++++++++++++++
+ .../mandelbrot_benchmark_distributed.py            | 36 +++++++++++++++++++++
+ 2 files changed, 73 insertions(+)
+2026-03-30 36019c4 Lecture 7
+
+ Lecture Exercises/Lecture 7/Lecture7.ipynb | 885 +++++++++++++++++++++++++++++
+ 1 file changed, 885 insertions(+)
+2026-03-29 6424830 Benchmark and Scaling analysis
+
+ Mini-Project-II/mandelbrot_benchmark.py       | 70 +++++++++++++++++++++++++++
+ Mini-Project-II/mandelbrot_timing_results.csv | 40 +++++++++++++++
+ 2 files changed, 110 insertions(+)
+2026-03-29 7206a7e Copied baseline from Mini-Project-I for scaling Analysis and benchmarking
+
+ Mini-Project-II/mandelbrot_numpy.py | 37 +++++++++++++++++++++++++++++++++++++
+ 1 file changed, 37 insertions(+)
+2026-03-29 8047eb3 Mandelbrot set using dask library of python
+
+ .vscode/settings.json                    |   5 ++
+ Mini-Project-II/mandelbrot_dask.png      | Bin 0 -> 290392 bytes
+ Mini-Project-II/mandelbrot_dask.py       |  91 +++++++++++++++++++++++++++++++
+ Mini-Project-II/mandelbrot_multiproc.png | Bin 0 -> 443516 bytes
+ 4 files changed, 96 insertions(+)
+2026-03-27 ffb6fc2 Copied common and multiprocessing work from Mini-Project-I
+
+ Mini-Project-II/mandelbrot_common.py    | 28 ++++++++++++++++
+ Mini-Project-II/mandelbrot_multiproc.py | 59 +++++++++++++++++++++++++++++++++
+ 2 files changed, 87 insertions(+)
+2026-03-27 d5cfaec Managing the folders
+
+ Extra Exercise/exercises.ipynb                     | 229 +++++++++++++++++++++
+ .../Cache blocking.ipynb                           |   0
+ .../Lec05_Studio.ipynb                             |   0
+ .../Lecture 5}/condition_partB_d0.0001.png         | Bin
+ .../Lecture 5}/condition_partB_d0.001.png          | Bin
+ .../Lecture 5}/condition_partB_d0.01.png           | Bin
+ .../Lecture 5}/condition_partB_d0.1.png            | Bin
+ .../Lecture 5}/condition_partB_d1.0.png            | Bin
+ .../Lecture 5}/condition_partB_d10.0.png           | Bin
+ .../Lecture 5}/condition_partD_d0.0001.png         | Bin
+ .../Lecture 5}/condition_partD_d0.001.png          | Bin
+ .../Lecture 5}/condition_partD_d0.01.png           | Bin
+ .../Lecture 5}/condition_partD_d0.1.png            | Bin
+ .../Lecture 5}/condition_partD_d1.0.png            | Bin
+ .../Lecture 5}/condition_partD_d10.0.png           | Bin
+ .../Lecture 5}/jacobian.py                         |   0
+ .../Lecture 5}/secdegprc.py                        |   0
+ .../Lecture_6}/Exercises.ipynb                     |   0
+ .../Lecture_6}/lecture.ipynb                       |   0
+ .../Loop unrolling.ipynb                           |   0
+ .../Memory_Organization.ipynb                      |   0
+ .../PI_MonteCarloMethod.ipynb                      |   0
+ .../Use_of_Register.ipynb                          |   0
+ lecture4.ipynb => Lecture Exercises/lecture4.ipynb |   0
+ 24 files changed, 229 insertions(+)
+2026-03-16 e0f5f9a Lecture 6 Exercises
+
+ Lecture_6/Exercises.ipynb | 194 ++++++++++++++++++++++++++++++++++++++++++++++
+ Lecture_6/lecture.ipynb   | 147 +++++++++++++++++++++++++++++++++++
+ 2 files changed, 341 insertions(+)
+2026-03-16 7c395f6 Jacobian task
+
+ Lecture 5/jacobian.py      | 66 ++++++++++++++++++++++++++++++++++++++++++++++
+ Mini-Project-I/git_log.txt |  8 ++++++
+ 2 files changed, 74 insertions(+)
+2026-03-13 6271257 Output images
+
+ Lecture 5/condition_partB_d0.0001.png | Bin 0 -> 23207 bytes
+ Lecture 5/condition_partB_d0.001.png  | Bin 0 -> 22608 bytes
+ Lecture 5/condition_partB_d0.01.png   | Bin 0 -> 23970 bytes
+ Lecture 5/condition_partB_d0.1.png    | Bin 0 -> 22248 bytes
+ Lecture 5/condition_partB_d1.0.png    | Bin 0 -> 22051 bytes
+ Lecture 5/condition_partB_d10.0.png   | Bin 0 -> 21032 bytes
+ Lecture 5/condition_partD_d0.0001.png | Bin 0 -> 28313 bytes
+ Lecture 5/condition_partD_d0.001.png  | Bin 0 -> 24938 bytes
+ Lecture 5/condition_partD_d0.01.png   | Bin 0 -> 24660 bytes
+ Lecture 5/condition_partD_d0.1.png    | Bin 0 -> 27852 bytes
+ Lecture 5/condition_partD_d1.0.png    | Bin 0 -> 26069 bytes
+ Lecture 5/condition_partD_d10.0.png   | Bin 0 -> 22561 bytes
+ 12 files changed, 0 insertions(+), 0 deletions(-)
+2026-03-13 0dc411e Second degree, secdegprc.py
+
+ Lecture 5/secdegprc.py | 137 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 137 insertions(+)
+2026-03-13 b79c282 Educational Studio from teacher
+
+ Lec05_Studio.ipynb                     | 561 +++++++++++++++++++++++++++++++++
+ Mini-Project-I/mandelbrot_baseline.png | Bin 439761 -> 509795 bytes
+ 2 files changed, 561 insertions(+)
+2026-03-06 12e5394 Readme update
+
+ README.md | 12 ++++++++----
+ 1 file changed, 8 insertions(+), 4 deletions(-)
+2026-03-06 4c4f135 Added git_log and updated the virtual environment connection on the readme file
+
+ Mini-Project-I/git_log.txt | 83 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 83 insertions(+)
+2026-03-02 67ecd4d Overall project stat - Mini Project
+
+ Mini-Project-I/bench.py | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+2026-03-02 53971a4 lecture 3 Exercise
+
+ PI_MonteCarloMethod.ipynb | 122 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 122 insertions(+)
+2026-03-02 4c02598 Lecture 4 Exercises plus gitignore file updates
+
+ .gitignore     |   4 +-
+ lecture4.ipynb | 327 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 330 insertions(+), 1 deletion(-)
+2026-03-02 400bbdd Using Multiprocessing
+
+ Mini-Project-I/mandelbrot_multiproc.png | Bin 0 -> 443516 bytes
+ Mini-Project-I/mandelbrot_multiproc.py  |  59 ++++++++++++++++++++++++++++++++
+ 2 files changed, 59 insertions(+)
+2026-03-02 7055298 Update .gitignore to ignore virtual environment and wheel files
+
+ .gitignore | 5 +++++
+ 1 file changed, 5 insertions(+)
+2026-02-26 6972af8 Tested the functionality of main in Python
+
+ Extra Exercise/another.py   | 5 +++++
+ Extra Exercise/test_main.py | 7 +++++++
+ 2 files changed, 12 insertions(+)
+2026-02-26 594593a Mandelbrot Project: using Numba
+
+ Mini-Project-I/mandelbrot_numba.png | Bin 0 -> 439251 bytes
+ Mini-Project-I/mandelbrot_numba.py  |  46 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 46 insertions(+)
+2026-02-26 a40f055 Mandelbrot Project: using vectorized numpy(Optimized)
+
+ Mini-Project-I/mandelbrot_numpy.png | Bin 0 -> 439382 bytes
+ Mini-Project-I/mandelbrot_numpy.py  |  37 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 37 insertions(+)
+2026-02-26 3435167 Mandelbrot project: baseline(with normal python loops
+
+ Mini-Project-I/mandelbrot_baseline.png | Bin 0 -> 439761 bytes
+ Mini-Project-I/mandelbrot_baseline.py  |  41 +++++++++++++++++++++++++++++++++
+ 2 files changed, 41 insertions(+)
+2026-02-26 a88a7c6 Three reusable functions are created
+
+ Mini-Project-I/mandelbrot_common.py | 28 ++++++++++++++++++++++++++++
+ 1 file changed, 28 insertions(+)
+2026-02-26 a54b365 Monte Carlo Exercise on lecture
+
+ Extra Exercise/Activity - Lecture 2.ipynb    |  48 +++---
+ Extra Exercise/Monte Carlo - Lecture 3.ipynb | 214 +++++++++++++++++++++++++++
+ 2 files changed, 238 insertions(+), 24 deletions(-)
+2026-02-23 4b46730 Check Strato - ReadMe
+
+ README.md | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+2026-02-16 7d1fc44 Exercise 2.2: Cache blocking
+
+ Cache blocking.ipynb | 181 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 181 insertions(+)
+2026-02-16 147f567 Exercise 2.1: Loop unrolling
+
+ Loop unrolling.ipynb | 193 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 193 insertions(+)
+2026-02-16 97e5939 Lecture two, classroom activities done by me and ran the code provided by the teacher
+
+ Extra Exercise/Activity - Lecture 2.ipynb | 594 +++++++++++++++++++++++++
+ Extra Exercise/Lecture_2_code.ipynb       | 714 ++++++++++++++++++++++++++++++
+ Memory_Organization.ipynb                 |  26 +-
+ 3 files changed, 1318 insertions(+), 16 deletions(-)
+2026-02-15 6e27064 Memory organizatoin - C vs Fortran layout
+
+ Memory_Organization.ipynb | 192 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 192 insertions(+)
+2026-02-15 8b222ed Excercise 1.1: 'Use of Registers'
+
+ README.md             |   2 +-
+ Use_of_Register.ipynb | 187 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 188 insertions(+), 1 deletion(-)
+2026-02-11 8094662 Initial commit
+
+ .gitignore | 207 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md  |   2 +
+ 2 files changed, 209 insertions(+)
