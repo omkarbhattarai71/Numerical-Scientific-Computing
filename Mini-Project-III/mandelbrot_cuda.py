@@ -11,9 +11,7 @@ import matplotlib
 matplotlib.use('Agg') # Headless mode for cluster execution
 import matplotlib.pyplot as plt
 
-# ==========================================
 # 1. NUMPY IMPLEMENTATION
-# ==========================================
 def mandelbrot_numpy(x_min, x_max, y_min, y_max, width, height, max_iter):
     """
     Compute the Mandelbrot set using NumPy vectorized operations.
@@ -57,9 +55,8 @@ def mandelbrot_numpy(x_min, x_max, y_min, y_max, width, height, max_iter):
     return output
 
 
-# ==========================================
 # 2. CUDA IMPLEMENTATION & REDUCTION
-# ==========================================
+
 @cuda.jit
 def mandelbrot_kernel(d_output, x_min, x_max, y_min, y_max, width, height, max_iter):
     """
@@ -91,9 +88,8 @@ def sum_reduction(a, b):
     """
     return a + b
 
-# ==========================================
 # 3. BENCHMARK FUNCTIONS
-# ==========================================
+
 def run_numpy(width, height, max_iter):
     """Measure NumPy execution time."""
     start = time.time()
@@ -125,9 +121,7 @@ def run_cuda(width, height, max_iter, block_size):
     return cuda.event_elapsed_time(start, end) / 1000.0
 
 
-# ==========================================
 # 4. SCALING EXPERIMENT & PLOTTING
-# ==========================================
 def scaling_experiment():
     """Run scaling experiments and plot the results."""
     sizes = [256, 512, 1024, 2048]
@@ -180,9 +174,7 @@ def scaling_experiment():
     print("Saved scaling_plot.png")
 
 
-# ==========================================
 # 5. IMAGE GENERATION & REDUCTION
-# ==========================================
 def save_image():
     """Generate image and calculate mean iterations using CUDA reduction."""
     width, height = 1024, 1024
@@ -211,9 +203,7 @@ def save_image():
     print("Saved mandelbrot_final.png")
 
 
-# ==========================================
 # 6. UNIT TESTS
-# ==========================================
 class TestMandelbrot(unittest.TestCase):
     def test_shape(self):
         result = mandelbrot_numpy(-2, 1, -1.5, 1.5, 100, 100, 50)
@@ -230,9 +220,7 @@ class TestMandelbrot(unittest.TestCase):
         self.assertEqual(d_out.copy_to_host()[0, 0], 50)
 
 
-# ==========================================
 # 7. MAIN
-# ==========================================
 if __name__ == "__main__":
 
     print("Running unit tests...")
