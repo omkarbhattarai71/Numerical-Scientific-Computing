@@ -1,4 +1,4 @@
-# Mandelbrot CUDA — Running mandelbrot_cuda.sh
+# Mandelbrot CUDA - Running mandelbrot_cuda.sh
 
 This README explains how to run the mandelbrot_cuda.sh script which builds and/or runs the CUDA implementation of the Mandelbrot renderer included in this repository.
 
